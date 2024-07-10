@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="container-fluid d-flex " style="background:rgb(181, 182, 182);">
+    <div class="wrapper ">
+        <div class="row py-5 ">
+            <div class="col-md-4  " >
+<div class="pro-img-slide bg-white px-5 " style="height: 100%; display: flex;justify-content: center;align-items: center;" >
+    <img src="—Pngtree—dslr camera_5637733.png" alt="">
+    <img src="—Pngtree—suit purple men's shirt formal_6957732.png" alt="">
+    <img src="—Pngtree—dslr camera_5637733.png" alt="">
+    <img src="—Pngtree—suit purple men's shirt formal_6957732.png" alt="">
+</div>
+            </div>
+            <div class="col-md-8 ">
+                <form id="productForm" class="product-add bg-white py-2 px-4" style="height: 100%;">
+                    <h3><span>Product Name</span></h3>
+                    <div class="reviews">
+                        <span>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                        </span>
+                        <a class="ms-2 text-dark" href="">(<span>99</span> Reviews)</a>
+                    </div>
+                    <h3 class="mt-3">$<span id="price">150</span>.00</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur distinctio, blanditiis rem minima possimus excepturi quia aut assumenda ex! Iste.</p>
+            
+                    <div class="sizes d-flex">
+                        <p class="mt-3 me-2">Sizes:</p>
+                        <input type="radio" id="xl" name="size" value="xl" checked>
+                        <label for="xl">XL</label>
+                        <input type="radio" id="xs" name="size" value="xs">
+                        <label for="xs">XS</label>
+                        <input type="radio" id="l" name="size" value="l">
+                        <label for="l">L</label>
+                        <input type="radio" id="m" name="size" value="m">
+                        <label for="m">M</label>
+                        <input type="radio" id="s" name="size" value="s">
+                        <label for="s">S</label>
+                    </div>
+            
+                    <div class="colour d-flex flex-wrap">
+                        <p class="me-2">Colors:</p>
+                        <input type="radio" name="colour" id="red" value="red" checked>
+                        <label for="red" class="custom-radio red me-1 mt-1"></label>
+                        <label for="red" class="me-4">Red</label>
+                        <input type="radio" name="colour" id="green" value="green">
+                        <label for="green" class="custom-radio green me-1 mt-1"></label>
+                        <label for="green" class="me-4">Green</label>
+                        <input type="radio" name="colour" id="yellow" value="yellow">
+                        <label for="yellow" class="custom-radio yellow me-1 mt-1"></label>
+                        <label for="yellow" class="me-4">Yellow</label>
+                        <input type="radio" name="colour" id="black" value="black">
+                        <label for="black" class="custom-radio black me-1 mt-1"></label>
+                        <label for="black" class="me-4">Black</label>
+                        <input type="radio" name="colour" id="white" value="white">
+                        <label for="white" class="custom-radio white me-1 mt-1"></label>
+                        <label for="white" class="me-4">White</label>
+                    </div>
+            
+                    <div class="quantity me-4 mt-3" style="background: #bdbcbc; display: inline-block; height: 30px;">
+                        <button type="button" onclick="changeQuantity(-1)"><i class="fa-solid fa-minus"></i></button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button type="button" onclick="changeQuantity(1)"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    
+                    <button class="pro-sub" type="submit"><i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart</button>
+            
+                    <div class="pro-share d-flex mt-2">
+                        <p>Share on:</p>
+                        <ul class="d-flex ms-3">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
+            
+       
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="slick.min.js"></script>
+  <script src="cus.js"></script>
+</body>
+</html>

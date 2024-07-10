@@ -279,3 +279,32 @@ position: relative;
 
     .footer_icon p{display: block;font-weight: bold;}
     .footer_icon  a{background: gold;padding: 5px;color: #000;}
+    .drop-it{position: relative;}
+    .drop-it ul{position: absolute;top: 130%; background: #fff;color: #000;opacity: 0;margin-top: 10px;transition: all ease-in-out 0.4s;}
+    .drop-it ul li a{padding: 2px 10px; }
+    .drop-it:hover ul li a{color: #000;}
+    .drop-it:hover ul li:hover a{color: #fff;background: #000;}
+    .drop-it:hover ul{opacity: 1;}
+    .pro-img-slide img{width: 80%;}
+  
+    .slick-arrow{position: absolute;top: 50%;z-index: 999;transform: translateY(-50%);background: none;border: none;font-size: 30px;}
+    .slick-prev{left: 10px;}
+    .slick-next{right: 10px;}
+    .sizes label{margin-right: 10px;margin-top: 16px;}
+    .sizes input{margin-right: 2px;}
+  
+    .colour input[type="radio"]{
+        display: none;
+
+    }
+    .custom-radio{border: 1px solid #000;height: 15px;padding: 0 7.5px;}
+    .colour input[type="radio"]:checked + .red{background: #ff0000;}
+    .colour input[type="radio"]:checked + .green{background: #00ff73;}
+    .colour input[type="radio"]:checked + .yellow{background: #fffb00;}
+    .colour input[type="radio"]:checked + .black{background: #000000;}
+    .colour input[type="radio"]:checked + .white{background: #f3f3f3;}
+    .quantity button{height: 30.5px;width: 30px;background: yellow;border: none;}
+    .quantity input{height: 30px;border: none;background: #bdbcbc;width: 30px;}
+    .pro-sub{padding: 4px 6px;text-transform: capitalize; background: yellow;border: none;}
+    .pro-share p{font-weight:bold;}
+    .pro-share a {padding: 0 5px;color: #000;}
