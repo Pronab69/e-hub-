@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<link rel="stylesheet" href="bootstrap.min.css">
+ 
+<link rel="stylesheet" href="slick.css">
+<link rel="stylesheet" href="all.min.css">
+<link rel="stylesheet" href="style.css">
+<body>
+    <section class="" style="background: whitesmoke;">
+        <div class="top bg-white mb-3 px-3 py-2">
+            <a  class="me-3 text-dark" href="index.html">home</a>/ <a  class="me-3 text-dark" href="product.html">Shop</a>/ <a  class="me-3 text-dark" href="shopping.html">Shopping Cart</a>
+        </div>
+<div class="wrapper">
+   
+<div class="row">
+    <div class="col-md-9 ">
+        <div class="row text-white text-center py-2 bg-dark">
+            <div class="col-3 px-0">Products</div>
+            <div class="col-2 px-0">Price</div>
+            <div class="col-3 px-0">Quantity</div>
+            <div class="col-2 px-0">Total</div>
+            <div class="col-2 px-0">Remove</div>
+        </div>
+        <div class="row text-dark text-center py-2 bg-white my-4" id="product-row-1">
+            <div class="col-3 px-0">Product name</div>
+            <div class="col-2 px-0" id="unit-price">$10</div>
+            <div class="col-3 px-0">
+                <div class="quantity2 d-flex">
+                    <button type="button" onclick="changeQuantity(-1, 10)"><i class="fa-solid fa-minus"></i></button>
+                    <input type="text" class="text-center" id="quantity" value="1" readonly>
+                    <button type="button" onclick="changeQuantity(1, 10)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="col-2 px-0" id="total-price">$10</div>
+            <div class="col-2 px-0">
+                <button style="background: none; border: none;" type="button" onclick="removeItem('product-row-1')">
+                    <i class="fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+                </button>
+            </div>
+        </div>
+    
+
+
+    </div>
+
+    <div class="col-md-3 checkout">
+<form class="mb-3" action=""><input type="text" placeholder="Coupon Code"><button>Apply Changes</button></form>
+<h5 class="com-head">CART SUMMARY</h5>
+<div class="px-3 py-4 proceed bg-white">
+    <div class="sub-total d-flex justify-content-between">
+        <p>Subtotal</p> <span>$150</span>
+    </div>
+    <div class="sub-total d-flex justify-content-between">
+        <p>Shipping</p> <span>$15</span>
+    </div>
+    <hr>
+    <div class="sub-total d-flex justify-content-between">
+        <p>Total</p> <span style="font-size: 20px;">$150</span>
+    </div>
+    <button type="submit">Proceed TO Checkout</button>
+
+</div>
+    </div>
+</div>
+
+
+
+</div>
+    </section>
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="cus.js"></script>
+</body>
+</html>
